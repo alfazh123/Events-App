@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.submisiakhir.ui.home.HomeFragment"
+        android:label="@string/dicoding_events"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.submisiakhir.ui.eventlist.UpcomingFragment"
+        android:label="@string/more_events"
+        tools:layout="@layout/fragment_upcoming" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.submisiakhir.ui.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.submisiakhir.ui.setting.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/navigation_bookmark"
+        android:name="com.example.submisiakhir.ui.bookmark.BookmarkFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_bookmark" />
+</navigation>
